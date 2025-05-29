@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time of Day</title>
+    </head>
+    <body>
+        <h1>Ryan Bush</h1>
+        <p>Course: Web Applications Programming</p>
+        <p>Major: Computer Science</p>
+        <p>Hello and welcome to my dynamic webpage!</p>
+
+        <script>
+            const hour = new Date().getHours();
+            let color;
+            
+            if (hour >= 6 && hour < 12) color = "#4287f5";  // morning blue
+            else if (hour >= 12 && hour < 18) color = "#42f560"; // afternoon green
+            else if (hour >= 18 && hour < 21) color = "#f5e942"; // evening yellow
+            else color = "#f55142"; // night red
+            
+            document.body.style.backgroundColor = color;
+        </script>
+    </body>
+</html>
